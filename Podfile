@@ -6,6 +6,7 @@ target 'DocTalkGitHubTask' do
   use_frameworks!
 
   # Pods for DocTalkGitHubTask
+  pod 'Alamofire', '~> 4.7'
 
   target 'DocTalkGitHubTaskTests' do
     inherit! :search_paths
