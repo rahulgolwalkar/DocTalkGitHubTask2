@@ -36,6 +36,9 @@ class RSearchUserTableViewController: UITableViewController,UISearchBarDelegate 
         return cell
     }
 
-
-
+    // TODO - Remove the following
+    @IBAction func testButtonClicked(_ sender: Any) {
+        NetworkManager.shared.userListingApi(searchString: "tom", pageNumber: 1)
+    }
+    
 }
