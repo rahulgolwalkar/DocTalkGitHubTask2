@@ -10,12 +10,16 @@
 		2DB3717CCA3CB71EACCB9817 /* Pods_DocTalkGitHubTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9120CDEB814B1D8047E39 /* Pods_DocTalkGitHubTaskTests.framework */; };
 		5859FE63BEEF95442C47635B /* Pods_DocTalkGitHubTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874AE29F102A6A931D722F80 /* Pods_DocTalkGitHubTaskUITests.framework */; };
 		BB39A5EF2067C0CB00184CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A5EE2067C0CB00184CB1 /* AppDelegate.swift */; };
-		BB39A5F12067C0CB00184CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A5F02067C0CB00184CB1 /* ViewController.swift */; };
 		BB39A5F42067C0CB00184CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB39A5F22067C0CB00184CB1 /* Main.storyboard */; };
 		BB39A5F62067C0CB00184CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB39A5F52067C0CB00184CB1 /* Assets.xcassets */; };
 		BB39A5F92067C0CB00184CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB39A5F72067C0CB00184CB1 /* LaunchScreen.storyboard */; };
 		BB39A6042067C0CB00184CB1 /* DocTalkGitHubTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A6032067C0CB00184CB1 /* DocTalkGitHubTaskTests.swift */; };
 		BB39A60F2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A60E2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift */; };
+		BB85E382206811FC0080E221 /* RSearchUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E381206811FC0080E221 /* RSearchUserTableViewController.swift */; };
+		BB85E384206812530080E221 /* RSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E383206812530080E221 /* RSearchTableViewCell.swift */; };
+		BB85E388206817080080E221 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E387206817080080E221 /* User.swift */; };
+		BB85E38A206817D40080E221 /* UserListingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E389206817D40080E221 /* UserListingApi.swift */; };
+		BB85E38E20681BA00080E221 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E38D20681BA00080E221 /* NetworkManager.swift */; };
 		C4C4E9E059069FAE521FE5B8 /* Pods_DocTalkGitHubTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA4D9644FDA0B7D98018D27 /* Pods_DocTalkGitHubTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +50,6 @@
 		ABB7D1524329C1ABC3CC71A5 /* Pods-DocTalkGitHubTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalkGitHubTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalkGitHubTaskUITests/Pods-DocTalkGitHubTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB39A5EB2067C0CA00184CB1 /* DocTalkGitHubTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocTalkGitHubTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB39A5EE2067C0CB00184CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB39A5F02067C0CB00184CB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB39A5F32067C0CB00184CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB39A5F52067C0CB00184CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB39A5F82067C0CB00184CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +60,11 @@
 		BB39A60A2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocTalkGitHubTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB39A60E2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocTalkGitHubTaskUITests.swift; sourceTree = "<group>"; };
 		BB39A6102067C0CB00184CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB85E381206811FC0080E221 /* RSearchUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSearchUserTableViewController.swift; sourceTree = "<group>"; };
+		BB85E383206812530080E221 /* RSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSearchTableViewCell.swift; sourceTree = "<group>"; };
+		BB85E387206817080080E221 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB85E389206817D40080E221 /* UserListingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListingApi.swift; sourceTree = "<group>"; };
+		BB85E38D20681BA00080E221 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D4B9120CDEB814B1D8047E39 /* Pods_DocTalkGitHubTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocTalkGitHubTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9019168E5610D3CD0451822 /* Pods-DocTalkGitHubTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalkGitHubTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalkGitHubTaskUITests/Pods-DocTalkGitHubTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,12 +145,15 @@
 		BB39A5ED2067C0CA00184CB1 /* DocTalkGitHubTask */ = {
 			isa = PBXGroup;
 			children = (
+				BB85E386206815F80080E221 /* Model */,
+				BB85E385206815EC0080E221 /* Networking */,
 				BB39A5EE2067C0CB00184CB1 /* AppDelegate.swift */,
-				BB39A5F02067C0CB00184CB1 /* ViewController.swift */,
 				BB39A5F22067C0CB00184CB1 /* Main.storyboard */,
 				BB39A5F52067C0CB00184CB1 /* Assets.xcassets */,
 				BB39A5F72067C0CB00184CB1 /* LaunchScreen.storyboard */,
 				BB39A5FA2067C0CB00184CB1 /* Info.plist */,
+				BB85E381206811FC0080E221 /* RSearchUserTableViewController.swift */,
+				BB85E383206812530080E221 /* RSearchTableViewCell.swift */,
 			);
 			path = DocTalkGitHubTask;
 			sourceTree = "<group>";
@@ -163,6 +174,23 @@
 				BB39A6102067C0CB00184CB1 /* Info.plist */,
 			);
 			path = DocTalkGitHubTaskUITests;
+			sourceTree = "<group>";
+		};
+		BB85E385206815EC0080E221 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BB85E38D20681BA00080E221 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BB85E386206815F80080E221 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB85E387206817080080E221 /* User.swift */,
+				BB85E389206817D40080E221 /* UserListingApi.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,8 +486,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB39A5F12067C0CB00184CB1 /* ViewController.swift in Sources */,
+				BB85E388206817080080E221 /* User.swift in Sources */,
+				BB85E38E20681BA00080E221 /* NetworkManager.swift in Sources */,
+				BB85E384206812530080E221 /* RSearchTableViewCell.swift in Sources */,
 				BB39A5EF2067C0CB00184CB1 /* AppDelegate.swift in Sources */,
+				BB85E38A206817D40080E221 /* UserListingApi.swift in Sources */,
+				BB85E382206811FC0080E221 /* RSearchUserTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
