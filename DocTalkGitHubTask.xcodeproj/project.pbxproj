@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DB3717CCA3CB71EACCB9817 /* Pods_DocTalkGitHubTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9120CDEB814B1D8047E39 /* Pods_DocTalkGitHubTaskTests.framework */; };
+		5859FE63BEEF95442C47635B /* Pods_DocTalkGitHubTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874AE29F102A6A931D722F80 /* Pods_DocTalkGitHubTaskUITests.framework */; };
 		BB39A5EF2067C0CB00184CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A5EE2067C0CB00184CB1 /* AppDelegate.swift */; };
 		BB39A5F12067C0CB00184CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A5F02067C0CB00184CB1 /* ViewController.swift */; };
 		BB39A5F42067C0CB00184CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB39A5F22067C0CB00184CB1 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		BB39A5F92067C0CB00184CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB39A5F72067C0CB00184CB1 /* LaunchScreen.storyboard */; };
 		BB39A6042067C0CB00184CB1 /* DocTalkGitHubTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A6032067C0CB00184CB1 /* DocTalkGitHubTaskTests.swift */; };
 		BB39A60F2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A60E2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift */; };
+		C4C4E9E059069FAE521FE5B8 /* Pods_DocTalkGitHubTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA4D9644FDA0B7D98018D27 /* Pods_DocTalkGitHubTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52094886D448AE46AA9B38ED /* Pods-DocTalkGitHubTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalkGitHubTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalkGitHubTaskTests/Pods-DocTalkGitHubTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		54F7BCE452D53B6B3C7AE973 /* Pods-DocTalkGitHubTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalkGitHubTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalkGitHubTask/Pods-DocTalkGitHubTask.release.xcconfig"; sourceTree = "<group>"; };
+		5CA4D9644FDA0B7D98018D27 /* Pods_DocTalkGitHubTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocTalkGitHubTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		874AE29F102A6A931D722F80 /* Pods_DocTalkGitHubTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocTalkGitHubTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B1D4AEA481DCFFABF8D4A4 /* Pods-DocTalkGitHubTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalkGitHubTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalkGitHubTask/Pods-DocTalkGitHubTask.debug.xcconfig"; sourceTree = "<group>"; };
+		94EA582F3996FB1F982751EB /* Pods-DocTalkGitHubTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalkGitHubTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalkGitHubTaskTests/Pods-DocTalkGitHubTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABB7D1524329C1ABC3CC71A5 /* Pods-DocTalkGitHubTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalkGitHubTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalkGitHubTaskUITests/Pods-DocTalkGitHubTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB39A5EB2067C0CA00184CB1 /* DocTalkGitHubTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocTalkGitHubTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB39A5EE2067C0CB00184CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB39A5F02067C0CB00184CB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		BB39A60A2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocTalkGitHubTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB39A60E2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocTalkGitHubTaskUITests.swift; sourceTree = "<group>"; };
 		BB39A6102067C0CB00184CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4B9120CDEB814B1D8047E39 /* Pods_DocTalkGitHubTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocTalkGitHubTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9019168E5610D3CD0451822 /* Pods-DocTalkGitHubTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalkGitHubTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalkGitHubTaskUITests/Pods-DocTalkGitHubTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C4E9E059069FAE521FE5B8 /* Pods_DocTalkGitHubTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB3717CCA3CB71EACCB9817 /* Pods_DocTalkGitHubTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5859FE63BEEF95442C47635B /* Pods_DocTalkGitHubTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36ECC392A0B1591FCB5C0032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CA4D9644FDA0B7D98018D27 /* Pods_DocTalkGitHubTask.framework */,
+				D4B9120CDEB814B1D8047E39 /* Pods_DocTalkGitHubTaskTests.framework */,
+				874AE29F102A6A931D722F80 /* Pods_DocTalkGitHubTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EC16E84E4037E26D95CD582 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92B1D4AEA481DCFFABF8D4A4 /* Pods-DocTalkGitHubTask.debug.xcconfig */,
+				54F7BCE452D53B6B3C7AE973 /* Pods-DocTalkGitHubTask.release.xcconfig */,
+				94EA582F3996FB1F982751EB /* Pods-DocTalkGitHubTaskTests.debug.xcconfig */,
+				52094886D448AE46AA9B38ED /* Pods-DocTalkGitHubTaskTests.release.xcconfig */,
+				D9019168E5610D3CD0451822 /* Pods-DocTalkGitHubTaskUITests.debug.xcconfig */,
+				ABB7D1524329C1ABC3CC71A5 /* Pods-DocTalkGitHubTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BB39A5E22067C0CA00184CB1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				BB39A6022067C0CB00184CB1 /* DocTalkGitHubTaskTests */,
 				BB39A60D2067C0CB00184CB1 /* DocTalkGitHubTaskUITests */,
 				BB39A5EC2067C0CA00184CB1 /* Products */,
+				8EC16E84E4037E26D95CD582 /* Pods */,
+				36ECC392A0B1591FCB5C0032 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB39A6132067C0CB00184CB1 /* Build configuration list for PBXNativeTarget "DocTalkGitHubTask" */;
 			buildPhases = (
+				804A0F01E64A998CF1A41BD2 /* [CP] Check Pods Manifest.lock */,
 				BB39A5E72067C0CA00184CB1 /* Sources */,
 				BB39A5E82067C0CA00184CB1 /* Frameworks */,
 				BB39A5E92067C0CA00184CB1 /* Resources */,
+				A45C87B6FA323EACA085FF9B /* [CP] Embed Pods Frameworks */,
+				EF62377EA481C7D7D45FBA0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB39A6162067C0CB00184CB1 /* Build configuration list for PBXNativeTarget "DocTalkGitHubTaskTests" */;
 			buildPhases = (
+				77CBE3B4F098BC51FB0A1899 /* [CP] Check Pods Manifest.lock */,
 				BB39A5FB2067C0CB00184CB1 /* Sources */,
 				BB39A5FC2067C0CB00184CB1 /* Frameworks */,
 				BB39A5FD2067C0CB00184CB1 /* Resources */,
+				7E70E7D97A41723D82108AE0 /* [CP] Embed Pods Frameworks */,
+				6470E2F5097DC8FF7AD515F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB39A6192067C0CB00184CB1 /* Build configuration list for PBXNativeTarget "DocTalkGitHubTaskUITests" */;
 			buildPhases = (
+				447185D94A941F478859D76B /* [CP] Check Pods Manifest.lock */,
 				BB39A6062067C0CB00184CB1 /* Sources */,
 				BB39A6072067C0CB00184CB1 /* Frameworks */,
 				BB39A6082067C0CB00184CB1 /* Resources */,
+				DCE02F7AF56E7BDDE4707D5E /* [CP] Embed Pods Frameworks */,
+				DD48FDEC9894EB41FB13AA05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,153 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		447185D94A941F478859D76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DocTalkGitHubTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6470E2F5097DC8FF7AD515F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocTalkGitHubTaskTests/Pods-DocTalkGitHubTaskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77CBE3B4F098BC51FB0A1899 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DocTalkGitHubTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E70E7D97A41723D82108AE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocTalkGitHubTaskTests/Pods-DocTalkGitHubTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		804A0F01E64A998CF1A41BD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DocTalkGitHubTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A45C87B6FA323EACA085FF9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocTalkGitHubTask/Pods-DocTalkGitHubTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCE02F7AF56E7BDDE4707D5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocTalkGitHubTaskUITests/Pods-DocTalkGitHubTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD48FDEC9894EB41FB13AA05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocTalkGitHubTaskUITests/Pods-DocTalkGitHubTaskUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF62377EA481C7D7D45FBA0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocTalkGitHubTask/Pods-DocTalkGitHubTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB39A5E72067C0CA00184CB1 /* Sources */ = {
@@ -424,6 +620,7 @@
 		};
 		BB39A6142067C0CB00184CB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B1D4AEA481DCFFABF8D4A4 /* Pods-DocTalkGitHubTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +636,7 @@
 		};
 		BB39A6152067C0CB00184CB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F7BCE452D53B6B3C7AE973 /* Pods-DocTalkGitHubTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +652,7 @@
 		};
 		BB39A6172067C0CB00184CB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94EA582F3996FB1F982751EB /* Pods-DocTalkGitHubTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +670,7 @@
 		};
 		BB39A6182067C0CB00184CB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52094886D448AE46AA9B38ED /* Pods-DocTalkGitHubTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +688,7 @@
 		};
 		BB39A61A2067C0CB00184CB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9019168E5610D3CD0451822 /* Pods-DocTalkGitHubTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +705,7 @@
 		};
 		BB39A61B2067C0CB00184CB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABB7D1524329C1ABC3CC71A5 /* Pods-DocTalkGitHubTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
