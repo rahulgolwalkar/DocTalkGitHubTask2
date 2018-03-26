@@ -6,15 +6,13 @@
 //  Copyright © 2018 rahulg. All rights reserved.
 //
 
-// GET request to https://api.github.com/search/users?q=tom&sort=followers&page=1&per_page=30&client_id=3825adf659cb6dcfe5ef&client_secret=9234a5ac5727ae8b0dd89b4f60c632da38118fcd 
-
 import UIKit
-import Alamofire
 
 class RSearchUserTableViewController: UITableViewController {
 
     var userArray:[User] = [User]()
     var pageNumber = 1
+    var moreUsersAvailable = false
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -26,7 +24,6 @@ class RSearchUserTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return userArray.count
     }
 
@@ -35,34 +32,61 @@ class RSearchUserTableViewController: UITableViewController {
         let cell:RSearchTableViewCell = tableView.dequeueReusableCell(withIdentifier: "RSearchTableViewCell", for: indexPath) as! RSearchTableViewCell
         let userObject: User = userArray[indexPath.row]
         cell.textLabel?.text = userObject.login
+        if ((indexPath.row == userArray.count - 1) && moreUsersAvailable) {
+            loadMoreUsers()
+        }
         return cell
     }
-
-    // TODO - Remove the following
-    @IBAction func testButtonClicked(_ sender: Any) {
-        NetworkManager.shared.userListingApi(searchString: "tom", pageNumber: 1, successCH: {userListing in
-            
-        }, failureCH: {_ in
-            self.activityIndicator.stopAnimating()
-        })
+    
+    // MARK - Scroll View
+    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.searchBar.resignFirstResponder()
     }
     
-}
-
-// MARK - Search Bar delegate and other stuff
-extension RSearchUserTableViewController: UISearchBarDelegate {
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.userArray.removeAll()
-        self.activityIndicator.startAnimating()
-        NetworkManager.shared.userListingApi(searchString: searchText, pageNumber: pageNumber, successCH: { (userListingApi) in
+    func loadMoreUsers() {
+        if userArray.count < 30 {
+            print("avoiding any unexpected fallthroughs")
+            return
+        }
+        pageNumber += 1
+        NetworkManager.shared.userListingApi(searchString: searchBar.text!, pageNumber: pageNumber, successCH: { (userListingApi) in
             self.userArray.append(contentsOf: userListingApi.items)
             self.tableView.reloadData()
         }) { (errorMessage) in
             let alert = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }
+}
+
+// MARK - Search Bar delegate
+extension RSearchUserTableViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.count < 1 {
+            return
+        }
+        self.userArray.removeAll()
+        self.pageNumber = 1
+        self.activityIndicator.startAnimating()
+        NetworkManager.shared.userListingApi(searchString: searchText, pageNumber: pageNumber, successCH: { (userListingApi) in
+            self.userArray.append(contentsOf: userListingApi.items)
+            self.tableView.reloadData()
+            self.moreUsersAvailable = true
+            if (userListingApi.items.count < 30) {
+                self.activityIndicator.stopAnimating()
+                self.moreUsersAvailable = false
+            }
+            
+        }) { (errorMessage) in
+            let alert = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            self.activityIndicator.stopAnimating()
+        }
+    }
+    
 }
 
 

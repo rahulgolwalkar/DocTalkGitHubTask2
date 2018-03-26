@@ -27,7 +27,7 @@ class NetworkManager {
             "q": searchString,
             "sort": "followers",
             "page": pageNumber,
-            "per_page": 1, //30 // TODO - change this
+            "per_page": 30,
             "client_id": "3825adf659cb6dcfe5ef",
             "client_secret": "9234a5ac5727ae8b0dd89b4f60c632da38118fcd"
         ]
