@@ -16,7 +16,6 @@
 		BB39A6042067C0CB00184CB1 /* DocTalkGitHubTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A6032067C0CB00184CB1 /* DocTalkGitHubTaskTests.swift */; };
 		BB39A60F2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39A60E2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift */; };
 		BB85E382206811FC0080E221 /* RSearchUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E381206811FC0080E221 /* RSearchUserTableViewController.swift */; };
-		BB85E384206812530080E221 /* RSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E383206812530080E221 /* RSearchTableViewCell.swift */; };
 		BB85E388206817080080E221 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E387206817080080E221 /* User.swift */; };
 		BB85E38A206817D40080E221 /* UserListingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E389206817D40080E221 /* UserListingApi.swift */; };
 		BB85E38E20681BA00080E221 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85E38D20681BA00080E221 /* NetworkManager.swift */; };
@@ -61,7 +60,6 @@
 		BB39A60E2067C0CB00184CB1 /* DocTalkGitHubTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocTalkGitHubTaskUITests.swift; sourceTree = "<group>"; };
 		BB39A6102067C0CB00184CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB85E381206811FC0080E221 /* RSearchUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSearchUserTableViewController.swift; sourceTree = "<group>"; };
-		BB85E383206812530080E221 /* RSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSearchTableViewCell.swift; sourceTree = "<group>"; };
 		BB85E387206817080080E221 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BB85E389206817D40080E221 /* UserListingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListingApi.swift; sourceTree = "<group>"; };
 		BB85E38D20681BA00080E221 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 				BB39A5F72067C0CB00184CB1 /* LaunchScreen.storyboard */,
 				BB39A5FA2067C0CB00184CB1 /* Info.plist */,
 				BB85E381206811FC0080E221 /* RSearchUserTableViewController.swift */,
-				BB85E383206812530080E221 /* RSearchTableViewCell.swift */,
 			);
 			path = DocTalkGitHubTask;
 			sourceTree = "<group>";
@@ -488,7 +485,6 @@
 			files = (
 				BB85E388206817080080E221 /* User.swift in Sources */,
 				BB85E38E20681BA00080E221 /* NetworkManager.swift in Sources */,
-				BB85E384206812530080E221 /* RSearchTableViewCell.swift in Sources */,
 				BB39A5EF2067C0CB00184CB1 /* AppDelegate.swift in Sources */,
 				BB85E38A206817D40080E221 /* UserListingApi.swift in Sources */,
 				BB85E382206811FC0080E221 /* RSearchUserTableViewController.swift in Sources */,

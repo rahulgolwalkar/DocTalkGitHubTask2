@@ -29,13 +29,17 @@ class RSearchUserTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:RSearchTableViewCell = tableView.dequeueReusableCell(withIdentifier: "RSearchTableViewCell", for: indexPath) as! RSearchTableViewCell
+        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "RSearchTableViewCell", for: indexPath)
         let userObject: User = userArray[indexPath.row]
         cell.textLabel?.text = userObject.login
         if ((indexPath.row == userArray.count - 1) && moreUsersAvailable) {
             loadMoreUsers()
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     // MARK - Scroll View
@@ -87,6 +91,13 @@ extension RSearchUserTableViewController: UISearchBarDelegate {
         }
     }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
 }
 
 
