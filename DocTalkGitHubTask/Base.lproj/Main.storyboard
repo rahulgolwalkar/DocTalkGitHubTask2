@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-1353" y="125"/>
         </scene>
-        <!--Search User Table View Controller-->
+        <!--GuitHub User Search-->
         <scene sceneID="f7p-JW-38f">
             <objects>
                 <tableViewController id="oH8-cz-YCI" customClass="RSearchUserTableViewController" customModule="DocTalkGitHubTask" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,18 +33,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="k84-Z4-6XH">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="search a user" id="k84-Z4-6XH">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <outlet property="delegate" destination="oH8-cz-YCI" id="iIE-6H-lBo"/>
+                                <outlet property="delegate" destination="oH8-cz-YCI" id="0tG-S3-6YM"/>
                             </connections>
                         </searchBar>
                         <view key="tableFooterView" contentMode="scaleToFill" id="bXa-fO-TTD">
                             <rect key="frame" x="0.0" y="603" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <subviews>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Z5Q-5a-a2d">
+                                    <rect key="frame" x="177" y="12" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hj-8S-Aox">
                                     <rect key="frame" x="164" y="7" width="46" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,53 +75,15 @@
                             <outlet property="delegate" destination="oH8-cz-YCI" id="aZB-CD-Vc7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="uvC-81-m5T"/>
+                    <navigationItem key="navigationItem" title="GuitHub User Search" id="uvC-81-m5T"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Z5Q-5a-a2d" id="8DP-tt-dVE"/>
+                        <outlet property="searchBar" destination="k84-Z4-6XH" id="eCz-lE-sUp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giy-XE-Ccg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-454" y="125"/>
-        </scene>
-        <!--Test View Controller-->
-        <scene sceneID="tcw-5X-H6G">
-            <objects>
-                <viewController storyboardIdentifier="TestViewController" id="68s-oC-Fup" customClass="TestViewController" customModule="DocTalkGitHubTask" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jIb-e7-eSo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="jkjlk" translatesAutoresizingMaskIntoConstraints="NO" id="ZYy-eg-VkN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                                <connections>
-                                    <outlet property="delegate" destination="68s-oC-Fup" id="HHk-fc-Cac"/>
-                                </connections>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="hEq-5q-4Iw"/>
-                    </view>
-                    <connections>
-                        <outlet property="sdc" destination="TY9-Ig-StH" id="8fz-WY-cbm"/>
-                        <outlet property="searchDisplayController" destination="TY9-Ig-StH" id="7LE-VJ-cKi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UdD-Cb-epY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController searchResultsTitle="Results title" id="TY9-Ig-StH">
-                    <connections>
-                        <outlet property="delegate" destination="68s-oC-Fup" id="hnn-1s-983"/>
-                        <outlet property="searchBar" destination="ZYy-eg-VkN" id="W5i-G0-ScD"/>
-                        <outlet property="searchContentsController" destination="68s-oC-Fup" id="Cwb-RR-xYV"/>
-                        <outlet property="searchResultsDataSource" destination="68s-oC-Fup" id="hPh-Ih-QGx"/>
-                        <outlet property="searchResultsDelegate" destination="68s-oC-Fup" id="jwm-yg-wgI"/>
-                    </connections>
-                </searchDisplayController>
-            </objects>
-            <point key="canvasLocation" x="-1298" y="1731"/>
         </scene>
     </scenes>
 </document>

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UserListingApi: Codable {
+struct UserListingApi: Codable {
     var total_count: Int?
     var incomplete_results: Bool
     var items: [User]
